@@ -28,7 +28,7 @@ set nuevoSexo(nuevoSexo){
 }
 
 saludar (nombre){
-    return `Hola ${nombre}`
+    return `Hola ${nombre} que tengas un buen dia :) <3`
 }
 
 }
@@ -36,4 +36,5 @@ saludar (nombre){
 
 let persona1 = new Persona({nombre:"Nicolas",edad:23,sexo:'macho'})
 
-console.log(persona1);
+console.log(persona1.saludar(persona1.nombre));
+
