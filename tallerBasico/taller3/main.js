@@ -1,0 +1,77 @@
+class Figura {
+  color;
+  area;
+  constructor({ color = "dame un color", area = 0 }) {
+    this.area = area;
+    this.color = color;
+  }
+  set areaNueva(nuevaArea) {
+    this.area = nuevaArea;
+  }
+  get area() {
+    return this.area;
+  }
+  set nuevoColor(nuevoColor) {
+    this.color = nuevoColor;
+  }
+  get color() {
+    return this.color;
+  }
+  calcularArea(area) {
+    return this.area;
+  }
+}
+
+
+
+class Circulo extends Figura {
+  radio;
+  constructor({ radio, color, area }) {
+    super({ color, area });
+    this.radio = radio;
+  }
+  set radionuevo(nuevoRadio) {
+    this.radio = nuevoRadio;
+  }
+  get radio() {
+    return this.radio;
+  }
+  calcularArea(radio){
+    return Math.PI * radio
+  }
+}
+
+
+class Rectangulor extends Figura{
+    largo
+    ancho
+    constructor({largo,ancho,color}){
+        super({color})
+        this.ancho=ancho
+        this.largo=largo
+    }
+    get largo(){
+        return this.largo
+    }
+    set nuevoLargo(nuevoLargo){
+        this.largo=nuevoLargo
+    }
+    get ancho(){
+        return this.ancho
+    }
+    set nuevoAncho(nuevoAncho){
+        this.ancho=nuevoAncho
+    }
+    calcularArea(largo,ancho){
+        return largo*ancho
+    }
+}
+
+let figura1 = new Figura({ color: "rojo", area: 23 });
+
+console.log(figura1.calcularArea(figura1.area));
+let ciruculo1 = new Circulo({radio:10,color:'verde',area:10})
+
+console.log(ciruculo1.calcularArea(ciruculo1.radio));
+let rectangulo1=new Rectangulor({largo:10,ancho:20,color:'azul'})
+console.log(rectangulo1.calcularArea(rectangulo1.largo,rectangulo1.largo));

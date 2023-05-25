@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nicolas Mauricio <3 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <link rel="stylesheet" href="inicio.css">
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="container-fluid">
+    <div class="col-12">
+      <div class="row">
+        <div class="col-3">
+          <div class="wrap">
+            <form>
+              <div class="form-header">
+                <h2>Formulario</h2>
+              </div>
+              <div class="form-body">
+                <fieldset>
+                  <legend><i class="fa fa-user"></i>Informacion Figura</legend>
+                  <label for="tipo">escoja la figura que va calcular el area</label>
+                  <select id="raza" name="raza" required>
+                    <option value=""></option>
+                    <option value="Circulo">Circulo</option>
+                    <option value="Rectangulo">Rectangulo</option>
+                  </select>
+                  <label for="nombre">Digite el color de la Figura</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="codigo">digite radio del circulo (si aplica)</label>
+                  <input type="number" id="edad" name="edad" required>
+                  <label for="Sonido">digite el lado 1 rectangulo (si aplica)</label>
+                  <input type="text" id="sonido" name="sonido" required>
+                  <label for="Sonido">digite el lado 2 rectangulo (si aplica)</label>
+                  <input type="text" id="sonido" name="sonido" required>
+                </fieldset>
+                <fieldset id="mostar"></fieldset>
+              </div>
+              <div class="form-footer">
+                <button type="submit" id="btn" style="margin-right: 50px;"> Agregar</button>
+              </div>
+            </form>
+            <div id="Estadistica"></div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="row" id="cartas"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+</html>

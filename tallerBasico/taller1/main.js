@@ -91,5 +91,7 @@ botonA.addEventListener("click", (el) => {
 </ul>
 </p>
 </div>`;
+
+formulario.reset()
 });
 
